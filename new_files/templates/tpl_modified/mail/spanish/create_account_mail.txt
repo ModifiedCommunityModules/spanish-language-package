@@ -1,0 +1,30 @@
+{if $GENDER != ''}Querido {$GENDER}{else}Hola{/if} {$NAME},
+
+su cuenta ha sido creada con éxito!
+
+Ahora tiene acceso a las siguientes características:
+
+-Carro de la compra - Los productos colocados en el carro de la compra permanecerán allí hasta que sean eliminados o comprados.
+-Libreta de direcciones - La libreta de direcciones le permite guardar varios destinos de envío diferentes.
+-Historial de pedidos - El historial de pedidos está siempre disponible para usted.
+-Evaluación de productos - ¡Premie y comente nuestros productos!
+
+Si esta cuenta no fue creada por usted, por favor contáctenos en {$content.MAIL_REPLY_ADDRESS}.
+
+{if $SEND_GIFT == true}
+Como agradecimiento por crear su cuenta, ha recibido un vale de regalo {$GIFT_AMMOUNT}!
+
+Canjee su vale con el siguiente código - {$GIFT_CODE} - al hacer un pedido o simplemente haciendo clic en el siguiente enlace {$GIFT_LINK}.
+{/if}
+
+{if $SEND_COUPON == true}
+Como agradecimiento por crear su cuenta, ha recibido un cupón de descuento!
+
+Los detalles del vale son: {$COUPON_DESC}
+
+Canjee su vale introduciendo el código {$COUPON_CODE} durante el proceso de compra, cuando se le pida.
+{/if} 
+
+Si tiene alguna pregunta, por favor contáctenos en {$content.MAIL_REPLY_ADDRESS}!
+
+[SIGNATUR]

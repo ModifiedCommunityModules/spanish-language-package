@@ -1,0 +1,49 @@
+<div style="width:700px;margin: 0px auto;">
+<table width="700" border="0" align="center" cellpadding="5" cellspacing="0">
+	<tr> 
+    	<td align="center" style="padding: 10px 0px;"><img src="{$logo_path}logo.gif" /></td>
+	</tr>
+	<tr> 
+    <td style="font-size:14px;text-transform:uppercase;padding:10px 5px;border-top: 1px dotted #999;border-bottom: 1px dotted #999;">
+      <font face="Tahoma, Verdana, sans-serif">Gracias por suscribirse</font>
+    </td>
+	</tr>
+	<tr> 
+		<td>
+      <br />
+      <font size="2" face="Tahoma, Verdana, sans-serif"><b>Gracias por suscribirse!</b><br />
+			<br />
+			{if isset($LINK)}
+			Usted recibe este e-mail porque quiere recibir nuestro bolet&iacute;n de noticias.<br />
+			<br />
+      Por favor, haga clic en el siguiente enlace de activaci&oacute;n para recibir los boletines de noticias. Si no se ha suscrito a este servicio, por favor ignore este e-mail!<br />
+      <br />
+      <b>Su enlace de activaci&oacute;n:</b><br />
+      <a href="{$LINK}">{$LINK}</a><br />
+      <br />
+      Si no se ha registrado en nuestro bolet&iacute;n de noticias o no desea recibirlo, por favor, ignore el enlace de activaci&oacute;n.<br />
+      <br />
+      Su consentimiento para el env&iacute;o de nuestro bolet&iacute;n es revocable en cualquier momento. El bolet&iacute;n se env&iacute;a de acuerdo con nuestra pol&iacute;tica de privacidad.<br />
+      {/if}
+
+      {if $SEND_GIFT == true}
+      <br />
+      Como agradecimiento por crear su cuenta, ha recibido un <b>{$GIFT_AMMOUNT}</b> vale de regalo!<br />
+      <br />
+      Canjee su vale con el siguiente c&oacute;digo <b>{$GIFT_CODE}</b> al hacer un pedido o simplemente haciendo clic en el siguiente enlace
+      <a href="{$GIFT_LINK}">[redeem Voucher]</a>.<br />
+      {/if}
+
+      {if $SEND_COUPON == true}
+      <br />
+      Como agradecimiento por crear su cuenta, ha recibido un cup&oacute;n de descuento.<br />
+      Los detalles del vale son: <b>{$COUPON_DESC}</b><br />
+      Canjee su vale introduciendo el c&oacute;digo {$COUPON_CODE} durante el proceso de compra, cuando se le pida.<br />
+      {/if}
+      </font>
+		</td>
+	</tr>
+</table>
+
+[SIGNATUR]
+</div>

@@ -1,0 +1,12 @@
+
+{$MESSAGE}
+  
+Valor del vale: {$AMMOUNT}
+    
+El código del vale es: {$GIFT_ID}
+
+Canjee su vale simplemente haciendo clic en el siguiente enlace - {$GIFT_LINK}.
+
+Si tiene alguna dificultad con el enlace, por favor visite nuestra web {$WEBSITE} e introduzca el código manualmente.
+
+[SIGNATUR]

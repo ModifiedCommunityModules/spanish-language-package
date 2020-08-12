@@ -1,0 +1,53 @@
+<div style="width:700px;margin: 0px auto;">
+<table width="700" border="0" align="center" cellpadding="5" cellspacing="0">
+	<tr> 
+    	<td align="center" style="padding: 10px 0px;"><img src="{$logo_path}logo.gif" /></td>
+	</tr>
+	<tr> 
+    <td style="font-size:14px;text-transform:uppercase;padding:10px 5px;border-top: 1px dotted #999;border-bottom: 1px dotted #999;">
+      <font face="Tahoma, Verdana, sans-serif">Cuenta creada con &eacute;xito</font>
+    </td>
+	</tr>
+	<tr> 
+		<td>
+      <br />
+      <font size="2" face="Tahoma, Verdana, sans-serif"><b>{if $GENDER != ''}Querido {$GENDER}{else}Hola{/if} {$NAME},</b><br />
+      <br />
+      su cuenta ha sido creada con &eacute;xito.<br />
+      Ahora tiene acceso a las siguientes caracter&iacute;sticas:<br />
+      <br />
+      <b>Carro de la compra</b> - Los productos colocados en la cesta de la compra permanecer&aacute;n all&iacute; hasta que sean eliminados o comprados.<br />
+      <br />
+      <b>Libreta de direcciones</b> - La libreta de direcciones permite guardar varios destinos de env&iacute;o diferentes.<br />
+      <br />
+      <b>Historial de pedidos</b> - Su historial de pedidos est&aacute; siempre disponible para usted.<br />
+      <br />
+      <b>Evaluaci&oacute;n del producto</b> - Califique y comente nuestros productos.<br />
+      <br />
+      <u>Atenci&oacute;n:</u> Si esta cuenta no fue creada por ti, 
+      por favor cont&aacute;ctenos en: <a href="mailto:{$content.MAIL_REPLY_ADDRESS}">{$content.MAIL_REPLY_ADDRESS}</a><br />
+
+      {if $SEND_GIFT == true}
+      <br />
+      Como agradecimiento por crear su cuenta, ha recibido un <b>{$GIFT_AMMOUNT}</b> vale de regalo!<br />
+      <br />
+      Canjee su vale con el siguiente c&oacute;digo <b>{$GIFT_CODE}</b> al hacer un pedido o simplemente haciendo clic en el siguiente enlace
+      <a href="{$GIFT_LINK}">[redeem Voucher]</a>.<br />
+      {/if}
+
+      {if $SEND_COUPON == true}
+      <br />
+      Como agradecimiento por crear su cuenta, ha recibido un cup&oacute;n de descuento.<br />
+      Los detalles del vale son: <b>{$COUPON_DESC}</b><br />
+      Canjee su vale introduciendo el c&oacute;digo {$COUPON_CODE} durante el proceso de compra, cuando se le pida.<br />
+      {/if}
+      <br />
+      Si tiene alguna pregunta, por favor cont&aacute;ctenos en: <a href="mailto:{$content.MAIL_REPLY_ADDRESS}">{$content.MAIL_REPLY_ADDRESS}</a>
+      </font>
+
+		</td>
+	</tr>
+</table>
+
+[SIGNATUR]
+</div>

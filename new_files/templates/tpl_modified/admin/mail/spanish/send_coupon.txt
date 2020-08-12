@@ -1,0 +1,9 @@
+{$MESSAGE}
+
+Canjee su cup&oacute;n introduciendo el c&oacute;digo del cup&oacute;n en el campo de entrada designado para c&oacute;digos de cupones/vales durante el proceso de compra.
+
+Su c&oacute;digo de cup&oacute;n es: {$COUPON_ID}
+
+Puedes usar el c&oacute;digo del cup&oacute;n la pr&oacute;xima vez que nos visites en {$WEBSITE}.
+
+[SIGNATUR]

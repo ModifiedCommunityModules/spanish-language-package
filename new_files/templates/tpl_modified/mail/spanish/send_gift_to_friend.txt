@@ -1,0 +1,15 @@
+
+---------------------------------------------------------------------------------------- 
+HA RECIBIDO UN VALE DE REGALO DE {$AMMOUNT} !
+----------------------------------------------------------------------------------------
+
+Este vale de regalo le fue enviado por: {$FROM_NAME}
+
+Mensaje:
+{$MESSAGE}
+
+El código del vale es: {$GIFT_CODE}
+
+Canjee su vale al hacer un pedido o simplemente haciendo clic en el siguiente enlace - {$GIFT_LINK}.
+
+[SIGNATUR]

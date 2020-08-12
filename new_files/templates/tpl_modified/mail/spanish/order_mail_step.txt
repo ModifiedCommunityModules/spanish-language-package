@@ -1,0 +1,68 @@
+{config_load file="$language/lang_$language.conf" section="duty_info"} 
+{$address_label_customer}
+
+{if $SHIPPING_METHOD}Método de envío: {$SHIPPING_METHOD}{/if}
+{if $PAYMENT_METHOD}Método de pago: {$PAYMENT_METHOD}{/if}
+Número de orden: {$oID}
+Fecha: {$DATE}
+{if $csID}ID de cliente: {$csID}{/if}
+Su dirección de correo electrónico: {$EMAIL}
+{if $vatID}Su número de identificación de IVA: {$vatID}{/if}
+----------------------------------------------------------------------
+
+
+Estimado {if $GENDER == 'm'}Sr.{elseif $GENDER == 'f'}Sra.{else}Hola{/if} {$NAME},
+
+gracias por su pedido.
+
+{if isset($NEW_PASSWORD) && $NEW_PASSWORD != ''}
+Su cuenta estaba protegida con una contraseña.
+Puedes cambiar tu contraseña con este enlace: {$NEW_PASSWORD}
+{/if}
+
+{if $COMMENTS}
+Sus comentarios:
+{$COMMENTS}
+{/if}
+
+Sus pedidos de los siguientes productos
+----------------------------------------------------------------------
+{foreach name=aussen item=order_values from=$order_data} 
+{$order_values.PRODUCTS_QTY} x {$order_values.PRODUCTS_NAME} {$order_values.PRODUCTS_PRICE}
+Número de producto {$order_values.PRODUCTS_MODEL}{$order_values.PRODUCTS_ATTRIBUTES_MODEL}
+{if $order_values.PRODUCTS_ORDER_DESCRIPTION != ''}{$order_values.PRODUCTS_ORDER_DESCRIPTION}{/if}
+{if $order_values.PRODUCTS_SHIPPING_TIME != ''}Tiempo de envío: {$order_values.PRODUCTS_SHIPPING_TIME}{/if}
+{if $order_values.PRODUCTS_ATTRIBUTES != ''}{$order_values.PRODUCTS_ATTRIBUTES}{/if}
+
+{/foreach}
+
+{foreach name=aussen item=order_total_values from=$order_total}
+{$order_total_values.TITLE}{$order_total_values.TEXT}
+{/foreach}
+
+{$downloads_content_txt}
+
+{if $address_label_payment != $address_label_shipping}
+{if isset($SHIPPING_CLASS) && strstr($SHIPPING_CLASS, 'selfpickup')}Dirección de la camioneta{else}Dirección de envío{/if}
+----------------------------------------------------------------------
+{$address_label_shipping}{/if}
+
+{if $address_label_payment}
+{if $address_label_payment != $address_label_shipping}Dirección de pago{else}Dirección de pago/envío{/if}
+----------------------------------------------------------------------
+{$address_label_payment}
+{/if}
+
+{if $DELIVERY_DUTY_INFO != ''}
+
+----------------------------------------------------------------------
+{#text_duty_info#}
+----------------------------------------------------------------------{/if}
+
+[SIGNATUR]
+
+{$REVOCATION_TXT}
+
+{$AGB_TXT}
+
+{$PRIVACY_POLICY_TXT}

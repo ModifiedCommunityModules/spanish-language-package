@@ -1,0 +1,8 @@
+
+{if $GENDER == 'm'}Estimado Sr.{elseif $GENDER == 'f'}Estimada Sra.{else}Hola{/if} {$NAME},
+
+El c&oacute;digo del vale que compr&oacute; ha sido activado!
+Ahora puede canjear su vale y/o enviarlo a alguien por correo electr&oacute;nico.
+Su vale vale {$AMMOUNT}.
+
+[SIGNATUR]

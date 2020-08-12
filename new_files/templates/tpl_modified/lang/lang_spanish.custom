@@ -1,0 +1,45 @@
+zoomtext = 'Para una vista m&aacute;s grande haga clic en la miniatura'
+products_desc = 'Descripci&oacute;n de los productos'
+products_fsk18_check = 'Este art&iacute;culo puede ser comprado s&oacute;lo despu&eacute;s de la verificaci&oacute;n de la edad.'
+products_manufacturer_model = 'MPN:'
+products_tags = 'Caracter&iacute;sticas'
+heading_products_tags = 'Caracter&iacute;sticas del producto'
+
+first = '&laquo; primero'
+back = '&laquo; volver'
+overview = 'Visi&oacute;n general'
+next = 'siguiente &raquo;'
+last = '&uacute;ltimo &raquo;'
+
+heading_miscellaneous = 'M&eacute;todos de pago'
+text_miscellaneous = 'La caja puede ser cambiada en tpl_modified/boxes/box_miscellaneous.html. Las variables de idioma se encuentran en el archivo tpl_modified/lang/german/lang_german.custom.'
+
+ab_admin = 'Adminarea'
+ab_orders = 'Ordenes'
+ab_contentmanager = 'Gestor de contenidos'
+ab_customers = 'Clientes'
+ab_category = 'Categor&iacute;a/Productos'
+ab_logoff = 'Cierre de sesi&oacute;n'
+ab_news = 'Noticias'
+ab_offline = 'Tienda Offline'
+ab_update = 'Actualizaci&oacute;n'
+ab_support = 'Apoyo'
+ab_shop = 'Tienda'
+ab_caching = 'Caching'
+
+ab_edit_content = 'Editar el contenido'
+ab_edit_product = 'Editar el producto'
+ab_edit_attributes = 'Editar los atributos del producto'
+ab_edit_category = 'Editar la categor&iacute;a'
+ab_edit_xsell = 'Editar la venta cruzada'
+ab_edit_tags = 'Caracter&iacute;sticas del producto'
+
+info_reviews = 'Rese&ntilde;as:'
+info_review = 'Revisar:'
+
+heading_trustedshops = 'Tiendas de confianza'
+
+text_search_again = 'Lo sentimos, no pudimos encontrar un producto que coincida con su solicitud de b&uacute;squeda'
+
+listing_listview = 'Vista de lista'
+listing_boxview = 'Vista de la caja'

@@ -1,0 +1,50 @@
+<div style="width:700px;margin: 0px auto;">
+<table width="700" border="0" align="center" cellpadding="5" cellspacing="0">
+	<tr> 
+    	<td align="center" style="padding: 10px 0px;"><img src="{$logo_path}logo.gif" /></td>
+	</tr>
+	<tr> 
+    	<td style="font-size:14px;text-transform:uppercase;padding:10px 5px;border-top: 1px dotted #999;border-bottom: 1px dotted #999;">
+        <font face="Tahoma, Verdana, sans-serif">El estado de su pedido ha cambiado</font>
+      </td>
+	</tr>
+	<tr> 
+		<td>
+        <br />
+        <font size="2" face="Tahoma, Verdana, sans-serif"><b>{if $GENDER == $smarty.const.MALE}Estimado Sr.{elseif $GENDER == $smarty.const.FEMALE}Estimada Sra.{else}Hola{/if} {$NAME},</b>
+        <br /><br />
+        El estado de su pedido {if $ORDER_NR}No. {$ORDER_NR}{/if} {if $ORDER_DATE}de {$ORDER_DATE}{/if} se ha cambiado.
+        
+        {if $ORDER_LINK}
+          <br /><br />
+          Enlace al pedido: <a href="{$ORDER_LINK}">haga clic aqu&iacute;.</a>
+        {/if}
+                
+        {if $NOTIFY_COMMENTS}
+          <br /><br />
+          Notas de su pedido:<br />
+          {$NOTIFY_COMMENTS}
+        {/if}        
+        
+        <br /><br />
+        Nuevo estado: <b>{$ORDER_STATUS}</b>
+
+        {if $PARCEL_COUNT > 0}
+          <br /><br />
+          Su env&iacute;o consiste en {$PARCEL_COUNT} paquete(s).<br />
+          Puede informarse sobre el estado de la entrega haciendo clic en los siguientes n&uacute;meros de paquete:<br />
+          {foreach name=aussen item=tracking_data from=$PARCEL_ARRAY}
+            <a target="_blank" href="{$tracking_data.tracking_link}">{$tracking_data.parcel_id}</a><br />
+          {/foreach}
+        {/if}
+
+        <br /><br />
+        Si tiene alguna pregunta, por favor responda a este correo electr&oacute;nico.        
+        
+        </font>
+		</td>
+	</tr>
+</table>
+
+[SIGNATUR]
+</div>
