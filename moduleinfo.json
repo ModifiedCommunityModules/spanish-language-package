@@ -1,16 +1,15 @@
 {
     "name": "Sprachpaket spanisch",
-    "archiveName": "fishnetservices/spanish-language-package",
+    "archiveName": "modifiedcommunitymodules/spanish-language-package",
     "sourceDir": "new_files",
     "version": "auto",
-    "productNumber": "49001",
-    "tags": "49001",
+
     "shortDescription": "Sprachpaket spanisch",
     "description": "Spanisches Sprachpaket ab Modified 2.0.5.0",
     "price": "free",
-    "developer": "fishnetservices",
-    "developerWebsite": "https://www.shopbetreuung.com/",
-    "website": "https://www.shopbetreuung.com/",
+    "developer": "Von vielen Entwicklern",
+    "developerWebsite": "https://www.modified-shop.org/forum/index.php?topic=36855.0",
+    "website": "https://www.modified-shop.org/forum/index.php?topic=36855.0",
     "category": "language",
     "modifiedCompatibility": [
         "2.0.5.0", "2.0.5.1"
