@@ -62,6 +62,7 @@ define('HEADER_TITLE_ADMINISTRATION', 'Administraci&oacute;n');
 // text for gender
 define('MALE', 'Se&ntilde;or');
 define('FEMALE', 'Se&ntilde;ora');
+define('DIVERSE', 'Diverso');
 
 // text for date of birth example
 define('DOB_FORMAT_STRING', 'tt.mm.jjjj');
@@ -121,7 +122,7 @@ define('BOX_PRODUCTS_ATTRIBUTES', 'Caracter&iacute;sticas del art&iacute;culo');
 define('BOX_MANUFACTURERS', 'Productor');
 define('BOX_REVIEWS', 'Valoraciones sobre el producto');
 define('BOX_CAMPAIGNS', 'Campa&ntilde;as');
-define('BOX_XSELL_PRODUCTS', 'Cross Marketing');
+define('BOX_XSELL_PRODUCTS', 'Marketing cruzado');
 define('BOX_SPECIALS', 'Ofertas');
 define('BOX_PRODUCTS_EXPECTED', 'Pr&oacute;ximamente');
 define('BOX_CUSTOMERS', 'Clientes');
@@ -145,7 +146,7 @@ define('BOX_DEFINE_LANGUAGE', 'Definir idiomas');
 define('BOX_FILE_MANAGER', 'Gestor de Ficheros');
 define('BOX_MAIL', 'Enviar E-mail');
 define('BOX_NEWSLETTERS', 'Gestor Newsletter');
-define('BOX_SERVER_INFO', 'Server Info');
+define('BOX_SERVER_INFO', 'Informaci&oacute;n del servidor');
 define('BOX_BLZ_UPDATE', 'Actualizar c&oacute;digos de Bancos');
 define('BOX_WHOS_ONLINE', 'Quien esta online');
 define('BOX_TPL_BOXES','Orden de los Box');
@@ -153,6 +154,7 @@ define('BOX_CURRENCIES', 'Divisas');
 define('BOX_LANGUAGES', 'Idiomas');
 define('BOX_ORDERS_STATUS', 'Estados de pedido');
 define('BOX_ATTRIBUTES_MANAGER','Gestor de atributos');
+define('BOX_MODULE_NEWSLETTER','Newsletter');
 define('BOX_SHIPPING_STATUS','Estado de env&iacute;o');
 define('BOX_SALES_REPORT','Estad&iacute;sticas de ventas');
 define('BOX_MODULE_EXPORT','M&oacute;dulos de exportaci&oacute;n');
@@ -170,27 +172,29 @@ define('BOX_ORDERS_XSELL_GROUP','Grupos de Cross-Marketing');
 define('BOX_REMOVEOLDPICS','Borrar im&aacute;genes viejas'); // Remove old pictures - franky_n - 20110105
 define('BOX_JANOLAW','janolaw AGB Hosting'); // Tomcraft - 2011-06-17 - Added janolaw AGB hosting service
 define('BOX_HAENDLERBUND','Federaci&oacute;n de distribuidores AGB Service'); // Tomcraft - 2012-12-08 - Added haendlerbund AGB interface
-define('BOX_SAFETERMS','Safeterms - AGB Service'); // Tomcraft - 2013-06-21 - Safeterms AGB interface
+define('BOX_SAFETERMS','Safeterms - Servicio AGB'); // Tomcraft - 2013-06-21 - Safeterms AGB interface
 define('BOX_SHOP','Tienda');
 define('BOX_LOGOUT','Desconectar');
-define('BOX_CREDITS','Credits');
+define('BOX_CREDITS','Cr&eacute;ditos');
 define('BOX_UPDATE','Comprobar versi&oacute;n');
 define('BOX_EASYMARKETING','EASYMARKETING AG'); // Tomcraft - 2013-08-29 - Added easymarketing
 define('BOX_GV_CUSTOMERS','Saldo clientes');
 define('BOX_IT_RECHT_KANZLEI', 'IT Despacho derechos');
-define('BOX_PROTECTEDSHOPS', 'Protected Shops - AGB Service');
+define('BOX_PROTECTEDSHOPS', 'Tiendas protegidas - Servicio AGB');
 define('BOX_CLEVERREACH', 'CleverReach');
 define('BOX_SUPERMAILER', 'SuperMailer');
 define('BOX_OFFLINE', 'Tienda desactivada');
-define('BOX_LOGS', 'Logfiles');
+define('BOX_LOGS', 'Archivos de registro');
 define('BOX_SHIPCLOUD', 'shipcloud');
 define('BOX_SHIPCLOUD_PICKUP', 'shipcloud - Recogida');
 define('BOX_PRODUCTS_TAGS', 'Propiedades del art&iacute;culo');
-define('BOX_TRUSTEDSHOPS', 'Trusted Shops');
-define('BOX_NEWSLETTER_RECIPIENTS', 'Destinatarios del boletín de noticias');
-define('BOX_DSGVO_EXPORT', 'Exportación del PBI');
+define('BOX_TRUSTEDSHOPS', 'Tiendas de confianza');
+define('BOX_NEWSLETTER_RECIPIENTS', 'Destinatarios del bolet&iacute;n de noticias');
+define('BOX_DSGVO_EXPORT', 'Exportaci&oacute;n del PBI');
 define('BOX_SUPPORT', 'Apoyo');
-define('BOX_CACHING', 'Caching');
+define('BOX_CACHING', 'Cach&eacute;');
+define('BOX_COOKIE_CONSENT', 'Consentimiento de cookies');
+define('BOX_SEMKNOX', 'B&uacute;squeda en el sitio 360 B&uacute;squeda de productos');
 
 define('TXT_GROUPS','<b>Grupos</b>:');
 define('TXT_SYSTEM','Sistema');
@@ -201,7 +205,9 @@ define('TXT_TOOLS','M&aacute;s programas');
 define('TEXT_ACCOUNTING','Derechos de acceso para:');
 
 /******* SHOPGATE **********/
-include_once (DIR_FS_CATALOG.'includes/external/shopgate/base/lang/spanish/admin/spanish.php');
+if (is_file(DIR_FS_CATALOG.'includes/external/shopgate/base/lang/spanish/admin/spanish.php')) {
+  include_once (DIR_FS_CATALOG.'includes/external/shopgate/base/lang/spanish/admin/spanish.php');
+}
 /******* SHOPGATE **********/
 
 // javascript messages
@@ -266,6 +272,7 @@ define('ENTRY_CITY_ERROR', '&nbsp;<span class="errorText">M&iacute;nimo ' . ENTR
 define('ENTRY_STATE', 'Provincia:');
 define('ENTRY_STATE_ERROR', '&nbsp;<span class="errorText">Entrada necesaria</font></small>');
 define('ENTRY_COUNTRY', 'Pa&iacute;s:');
+define('ENTRY_COUNTRY_ERROR', 'Elija su pa&iacute;s.');
 define('ENTRY_TELEPHONE_NUMBER', 'Telef&oacute;no:');
 define('ENTRY_TELEPHONE_NUMBER_ERROR', '&nbsp;<span class="errorText">M&iacute;nimo ' . ENTRY_TELEPHONE_MIN_LENGTH . ' cifras</span>');
 define('ENTRY_FAX_NUMBER', 'N&uacute;mero de Fax:');
@@ -285,6 +292,7 @@ define('SAVE_ENTRY','Guardar cambios?');
 define('TEXT_CHOOSE_INFO_TEMPLATE','Plantilla para detalles de art&iacute;culo');
 define('TEXT_CHOOSE_OPTIONS_TEMPLATE','Plantilla para opciones de art&iacute;culo');
 define('TEXT_SELECT','-- Elige por favor --');
+define('PULL_DOWN_DEFAULT', 'Por favor, seleccione');
 
 // BOF - Tomcraft - 2009-06-10 - added some missing alternative text on admin icons
 // Icons
@@ -318,6 +326,7 @@ define('TEXT_DISPLAY_NUMBER_OF_CURRENCIES', 'Se muestran <b>%d</b> bis <b>%d</b>
 define('TEXT_DISPLAY_NUMBER_OF_LANGUAGES', 'Se muestran <b>%d</b> bis <b>%d</b> (de un total de <b>%d</b> Idiomas)');
 define('TEXT_DISPLAY_NUMBER_OF_MANUFACTURERS', 'Se muestran <b>%d</b> bis <b>%d</b> (de un total de <b>%d</b> Productores)');
 define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS', 'Se muestran <b>%d</b> bis <b>%d</b> (de un total de <b>%d</b> Newsletter)');
+define('TEXT_DISPLAY_NUMBER_OF_NEWSLETTERS_RECIPIENTS', 'Mostrando del <b>%d</b> al <b>%d</b> (de <b>%d</b> destinatarios del bolet&iacute;n)');
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Se muestran <b>%d</b> bis <b>%d</b> (de un total de <b>%d</b> Pedidos)');
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS_STATUS', 'Se muestran <b>%d</b> bis <b>%d</b> (de un total de <b>%d</b> Estado del pedido)');
 define('TEXT_DISPLAY_NUMBER_OF_XSELL_GROUP', 'Se muestran <b>%d</b> bis <b>%d</b> (de un total de <b>%d</b> Grupos Cross-Marketing)');
@@ -363,8 +372,8 @@ define('DELETE_ENTRY','Borrar entrada?');
 define('TEXT_PAYMENT_ERROR','<b>ATENCION:</b> Por favor activa un m&oacute;dulo de forma de pago!');
 define('TEXT_SHIPPING_ERROR','<b>ATENCION:</b> Por favor activa un m&oacute;dulo de forma de env&iacute;o!');
 define('TEXT_PAYPAL_CONFIG','<b>ATENCION:</b> Puedes configurar los pagos con PayPal del "Live Modus" en: <a href="%s"><strong>Socios -> PayPal</strong></a>'); //DokuMan - 2012-05-31 - show warning if PayPal payment module activated, but not configured for live mode yet
+define('TEXT_DUPLICATE_CONFIG_ERROR','<b>ADVERTENCIA:</b> Clave de configuraci&oacute;n duplicada: ');
 define('TEXT_NETTO','Neto: ');
-define('TEXT_DUPLUCATE_CONFIG_ERROR','<b>ATENCION:</b> Duplicate configuration key: ');
 
 define('ENTRY_CID','N&ordm;. de Cliente:');
 define('IP','IP del pedido:');
@@ -628,7 +637,7 @@ define('TEXT_SORT_DESC','descendiendo');
 define('MSRP','MSRP');
 define('YOUR_PRICE','tu precio ');
 define('UNIT_PRICE','precio unitario ');
-define('ONLY',' Ahora sólo ');
+define('ONLY',' Ahora s&oacute;lo ');
 define('FROM','de ');
 define('YOU_SAVE','usted salva ');
 define('INSTEAD','Nuestro precio anterior ');

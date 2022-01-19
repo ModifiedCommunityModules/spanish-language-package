@@ -42,4 +42,5 @@ define('TEXT_INFO_DATE_REDEEMED', 'Fecha de carga:');
 define('TEXT_INFO_IP_ADDRESS', 'Direcci&oacute;n IP:');
 define('TEXT_INFO_CUSTOMERS_ID', 'No de cliente:');
 define('TEXT_INFO_NOT_REDEEMED', 'No redimido');
+define('TEXT_INFO_DELETE_INTRO', '&iquest;Borrar este cheque regalo?');
 ?>

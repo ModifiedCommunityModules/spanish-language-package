@@ -44,4 +44,6 @@ define('TEXT_REDEEM_COUPON_MESSAGE_AMOUNT', 'El vale que pidi&oacute; tiene un v
 define('TEXT_REDEEM_COUPON_MESSAGE_BODY', '');
 define('TEXT_REDEEM_COUPON_MESSAGE_FOOTER', '');
 define('TEXT_REDEEM_COUPON_SUBJECT', 'Comprar un bono');
+define('TEXT_INFO_DELETE_INTRO', '&iquest;Borrar este cheque regalo?');
+define('TEXT_INFO_REDEEM_INTRO', '&iquest;Conseguir este cheque regalo?');
 ?>

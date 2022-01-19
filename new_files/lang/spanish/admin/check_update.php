@@ -17,7 +17,7 @@
    --------------------------------------------------------------*/
 
 define('HEADING_TITLE', 'Actualizaci&oacute;n del programa');
-define('HEADING_SUBTITLE', 'Update Check');
+define('HEADING_SUBTITLE', 'Comprobaci&oacute;n de actualizaci&oacute;n');
 
 define('TEXT_DB_VERSION','Versi&oacute;n de la Base de Datos:');
 define('TEXT_INFO_UPDATE_RECOMENDED', 'Hay una nueva versi&oacute;n disponible.');

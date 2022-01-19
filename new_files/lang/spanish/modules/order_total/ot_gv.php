@@ -49,4 +49,6 @@
   define('MODULE_ORDER_TOTAL_GV_TAX_CLASS_DESC', 'Usar este tipo de IVA cuando se usa el Vale de descuento como un abono.');
   define('MODULE_ORDER_TOTAL_GV_CREDIT_TAX_TITLE', 'Saldo incluye IVA.');
   define('MODULE_ORDER_TOTAL_GV_CREDIT_TAX_DESC', 'Imputar IVA al valor del Vale de descuento');
+    define('MODULE_ORDER_TOTAL_GV_UNALLOWED_PAYMENT_TITLE', 'M&oacute;dulos de pago no permitidos');
+  define('MODULE_ORDER_TOTAL_GV_UNALLOWED_PAYMENT_DESC', '<strong>NO SE PERMITE</strong> m&oacute;dulos de pago para productos de regalo.');
 ?>

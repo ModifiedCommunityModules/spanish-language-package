@@ -13,9 +13,7 @@
    Released under the GNU General Public License
    --------------------------------------------------------------*/
 
-
 define('TITLE','CSV Backend');
-
 define('IMPORT','Import');
 define('EXPORT','Exportaci&oacute;n');
 define('UPLOAD','Subir el archivo al servidor');
@@ -34,8 +32,6 @@ define('TEXT_PRODUCTS','Productos');
 define('TEXT_EXPORT','El archivo exportado se guarda en el directorio /exportado');
 define('CSV_CATEGORY_DEFAULT_TITLE','Categor&iacute;a de importaci&oacute;n');
 define('CSV_CATEGORY_DEFAULT_DESC','Alle Artikel, die in der CSV-Importdatei <b>keine</b> Kategorie zugeordnet haben und noch nicht im Shop vorhanden sind, werden in diese Kategorie importiert.<br/><b>Wichtig:</b> Wenn Sie Artikel ohne Kategorie in der CSV-Importdatei nicht importieren m&ouml;chten, dann w&auml;hlen Sie Kategorie "Top" aus, da in diese Kategorie keine Artikel importiert werden.');
-//BOC added constants for category depth, noRiddle
 define('CSV_CAT_DEPTH_TITLE','Kategorietiefe');
 define('CSV_CAT_DEPTH_DESC','&iquest;Qu&eacute; tan profundo debe ser el &aacute;rbol de categor&iacute;as? (por ejemplo, con el ajuste predeterminado 4: Categor&iacute;a principal y tres subcategor&iacute;as)<br /> Este ajuste es importante para que las categor&iacute;as creadas en el CSV se importen correctamente. Lo mismo se aplica a la exportaci&oacute;n.<br /><span style="color:#c00;">M&aacute;s de 4 puede llevar a p&eacute;rdidas de rendimiento y puede no ser amigable para el cliente!');
-//EOC added constants for category depth, noRiddle
 ?>

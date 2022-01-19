@@ -41,5 +41,5 @@ define('INFO_NEWSLETTER_LEFT', '%d Bolet&iacute;n de noticias a la izquierda');
 // EOF - DokuMan - 2011-12-12 - Texts for Newsletter E-Mail send status
 
 define('TEXT_NEWSLETTER_INFO', '<strong>ATENCI&oacute;N:</strong> Si se utiliza el m&oacute;dulo de la tienda de boletines, debe preguntar a su proveedor cu&aacute;ntos correos electr&oacute;nicos pueden enviarse en un determinado per&iacute;odo de tiempo.<br />Muchos proveedores tienen restricciones o s&oacute;lo permiten el env&iacute;o a trav&eacute;s de servidores de correo electr&oacute;nico especiales.<br /><br />Por defecto, la firma ya est&aacute; adjunta al bolet&iacute;n. Si desea insertar la firma con un formato diferente a trav&eacute;s del editor, por favor inserte el c&oacute;digo [NOSIGNATUR] (incl. corchetes) al final del bolet&iacute;n de noticias.');
-
+define('TEXT_INFO_SENDING', 'Por favor, espere, el bolet&iacute;n se est&aacute; enviando. Esto puede llevar alg&uacute;n tiempo.');
 ?>

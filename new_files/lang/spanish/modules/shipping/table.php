@@ -19,6 +19,7 @@
 define('MODULE_SHIPPING_TABLE_TEXT_TITLE', 'Tasa de la tabla');
 define('MODULE_SHIPPING_TABLE_TEXT_DESCRIPTION', 'Tasa de la tabla');
 define('MODULE_SHIPPING_TABLE_TEXT_WAY', 'La mejor manera (%01.2f kg)');
+define('MODULE_SHIPPING_TABLE_TEXT_UNITS', 'kg');
 define('MODULE_SHIPPING_TABLE_TEXT_WEIGHT', 'Peso');
 define('MODULE_SHIPPING_TABLE_TEXT_AMOUNT', 'Cantidad');
 define('MODULE_SHIPPING_TABLE_UNDEFINED_RATE', '&iexcl;No hay env&iacute;o disponible para el pa&iacute;s seleccionado!');
