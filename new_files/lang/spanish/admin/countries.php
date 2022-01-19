@@ -35,4 +35,14 @@ define('TEXT_INFO_HEADING_EDIT_COUNTRY', 'Editar el pa&iacute;s');
 define('TEXT_INFO_HEADING_DELETE_COUNTRY', 'perder la tierra');
 
 define('TABLE_HEADING_REQUIRED_ZONES','Mostrar los estados federales');
+
+define('TEXT_INFO_ADDRESS_FORMAT_HEADING', 'Formato de la direcci&oacute;n');
+define('TEXT_INFO_FIRSTNAME', 'John');
+define('TEXT_INFO_LASTNAME', 'Doe');
+define('TEXT_INFO_COMPANY', 'Empresa');
+define('TEXT_INFO_STREET_ADDRESS', 'Direcci&oacute;n de la calle 12');
+define('TEXT_INFO_SUBURB', 'Suburbio');
+define('TEXT_INFO_CITY', 'Ciudad');
+define('TEXT_INFO_POSTCODE', '12345');
+define('TEXT_INFO_STATE', 'BE');
 ?>

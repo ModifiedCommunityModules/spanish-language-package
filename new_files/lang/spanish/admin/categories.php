@@ -71,7 +71,8 @@ define('TEXT_EDIT_CATEGORIES_NAME', 'Nombre de la categor&iacute;a:');
 define('TEXT_EDIT_CATEGORIES_HEADING_TITLE', 'Encabezamiento categor&iacute;a:');
 define('TEXT_EDIT_CATEGORIES_DESCRIPTION', 'Descripci&oacute;n categor&iacute;a:');
 define('TEXT_EDIT_CATEGORIES_IMAGE', 'Imagen categor&iacute;a:');
-
+define('TEXT_EDIT_CATEGORIES_IMAGE_LIST', 'Listado de im&aacute;genes de la categor&iacute;a:');
+define('TEXT_EDIT_CATEGORIES_IMAGE_MOBILE', 'Categor&iacute;a Imagen M&oacute;vil:');
 define('TEXT_EDIT_SORT_ORDER', 'Orden:');
 
 define('TEXT_INFO_COPY_TO_INTRO', 'Por favor elige una categor&iacute;a nueva, en la cual quiere copiar los art&iacute;culos:');
@@ -124,6 +125,7 @@ define('TEXT_PRODUCT_NOT_AVAILABLE', 'Desactivado');
 define('TEXT_PRODUCTS_MANUFACTURER', 'Productor del art&iacute;culo:');
 define('TEXT_PRODUCTS_MANUFACTURER_MODEL', 'N&ordm;. Art. del productor. (HAN/MPN):');
 define('TEXT_PRODUCTS_NAME', 'Nombre del art&iacute;culo:');
+define('TEXT_PRODUCTS_HEADING_TITLE', 'R&uacute;brica de productos:');
 define('TEXT_PRODUCTS_DESCRIPTION', 'Descripci&oacute;n del art&iacute;culo:');
 define('TEXT_PRODUCTS_QUANTITY', 'Stock:');
 define('TEXT_PRODUCTS_MODEL', 'N&ordm;. Art&iacute;culo:');
@@ -262,4 +264,6 @@ define('TEXT_TAGS_COPY', 'Copiar tambi&eacute;n caracter&iacute;sticas del art&i
 define('TEXT_TAGS_COPY_INFO', 'Copiar caracter&iacute;sticas del art&iacute;culo<br/ >Se aconseja usar solo cuando se copia (1 Art&iacute;culo)');
 
 define('TEXT_PRODUCTS_LAST_MODIFIED', 'Ultima actualizaci&oacute;n:');
+define('TEXT_STOCK_UPDATE_SUCCESS', 'Acciones guardadas');
+define('TEXT_STOCK_UPDATE_ERROR', 'Stock no guardado');
 ?>

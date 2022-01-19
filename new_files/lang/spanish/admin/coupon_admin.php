@@ -99,6 +99,7 @@ define('COUPON_CUSTOMERS_HELP', 'Elija los grupos de clientes v&aacute;lidos par
 
 define('COUPON_ID', 'cID');
 define('BUTTON_DELETE_NO_CONFIRM', 'empezar sin provocar');
+define('TEXT_NO_RESTRICTION', 'sin restricciones');
 define('TEXT_NONE', 'ninguna restricci&oacute;n');
 define('TEXT_COUPON_DELETE', 'Loschen');
 define('TEXT_COUPON_STATUS', 'Estado');

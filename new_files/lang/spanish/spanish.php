@@ -52,7 +52,7 @@ define('LANGUAGE_CURRENCY', 'EUR');
 
 define('MALE', 'Se&ntilde;or');
 define('FEMALE', 'Se&ntilde;ora');
-
+define('DIVERSE', 'Diverso');
 /*
  * 
  *  BOXES
@@ -319,6 +319,7 @@ define('JS_PRICE_TO_MUST_BE_NUM', '* \"Precio hasta\" tiene que ser una cifra\n\
 define('JS_PRICE_TO_LESS_THAN_PRICE_FROM', '* Precio "hasta" tiene que ser m&aacute;s alto o igual que el precio "desde".\n');
 define('JS_INVALID_KEYWORDS', '* T&eacute;rmino de b&uacute;squeda no permitido\n');
 define('TEXT_LOGIN_ERROR', '<b>ERROR:</b> Ninguna coincidencia en \'Direcci&oacute;n E-Mail\' y/o en la \'contrase&ntilde;a\'.');
+define('TEXT_RELOGIN_NEEDED', 'Por favor, inicie sesi&oacute;n de nuevo.');
 //define('TEXT_NO_EMAIL_ADDRESS_FOUND', '<span class="color_error_message"><b>ATENCION:</b></span> El E-Mail introducido no esta registrado. Por favor, prueba otra vez.'); // Not used anymore as we do not give a hint that an e-mail address is or is not in the database!
 define('TEXT_PASSWORD_SENT', 'Se ha enviado una contrase&ntilde;a nueva por correo electr&oacute;nico.');
 define('TEXT_PRODUCT_NOT_FOUND', 'El art&iacute;culo no se ha encontrado!');
@@ -458,6 +459,7 @@ define('TEXT_LINK_TITLE_INFORMATION', 'Informaci&oacute;n');
 define('TEXT_CLOSE_WINDOW', 'Cerrar ventana [x]');
 define('TEXT_COUPON_HELP_HEADER', 'Tu Vale/Cup&oacute;n ha sido canjeado correctamente.');
 define('TEXT_COUPON_HELP_NAME', '<br /><br />Descripci&oacute;n del Vale/Cup&oacute;n: %s');
+define('TEXT_COUPON_HELP_SPECIALS', '<br /><br />Su cup&oacute;n no se puede utilizar en ofertas especiales.');
 define('TEXT_COUPON_HELP_FIXED', '<br /><br />El valor del cup&oacute;n/vale es de %s ');
 define('TEXT_COUPON_HELP_MINORDER', '<br /><br />El valor min. del pedido es %s ');
 define('TEXT_COUPON_HELP_FREESHIP', '<br /><br />Vale para env&iacute;o gratuito');
@@ -554,6 +556,7 @@ define('GV_NO_PAYMENT_INFO', '<div class="infomessage">Con el Saldo actual puede
 define('GV_ADD_PAYMENT_INFO', '<div class="errormessage">Tu Saldo actual no es suficiente para pagar todo el pedido. Por favor a&ntilde;ade adem&aacute;s und forma de pago!</div>');
 
 define('_SHIPPING_FREE','Env&iacute;o gratuito');
+define('TEXT_INFO_FREE_SHIPPING_COUPON', 'Los gastos de env&iacute;o est&aacute;n cubiertos por su cup&oacute;n.');
 
 define('TEXT_CONTENT_NOT_FOUND', 'Esta p&aacute;gina no ha sido encontrada.!');
 define('TEXT_SITE_NOT_FOUND', 'Esta p&aacute;gina no ha sido encontrada!');

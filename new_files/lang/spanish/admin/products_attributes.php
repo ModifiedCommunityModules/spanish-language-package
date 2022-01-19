@@ -44,4 +44,21 @@ define('TEXT_INFO_EDIT_VALUE_INTRO', 'Por favor, haga los cambios necesarios.');
 define('TEXT_INFO_HEADING_DELETE_VALUE', 'Borrar el valor');
 define('TEXT_INFO_DELETE_VALUE_INTRO', '&iquest;Est&aacute;s seguro de que quieres borrar este valor?');
 define('TEXT_DISPLAY_NUMBER_OF_VALUES', 'Mostrando <b>%d</b> a <b>%d</b> (de <b>%d</b> valores)');
+
+define('TITLE_EDIT','Editar atributos ');
+define('SORT_ORDER','Orden de clasificaci&oacute;n');
+define('ATTR_MODEL','Modelo de atributos');
+define('ATTR_STOCK','Stock');
+define('ATTR_WEIGHT','Valor Peso');
+define('ATTR_PREFIXWEIGHT','Prefijo de peso');
+define('ATTR_PRICE','Valor Precio');
+define('ATTR_PREFIXPRICE','Prefijo del precio');
+define('DL_COUNT','Cuenta:');
+define('DL_EXPIRE','Expira:');
+define('TEXT_OPTION_ID', 'Opci&oacute;n ID');
+define('TEXT_OPTION_NAME', 'Nombre de la opci&oacute;n');
+define('TEXT_SORTORDER', 'Clasificaci&oacute;n');
+define('ATTR_EAN', 'GTIN/EAN');
+define('ATTR_SAVE_ACTIVE', 'Guardar atributos de despliegue');
+define('ATTR_VPE','Unidad de embalaje');
 ?>

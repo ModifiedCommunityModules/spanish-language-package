@@ -37,6 +37,7 @@ define('TEXT_INFO_USE_ZIP', 'Con ZIP');
 define('TEXT_INFO_USE_NO_COMPRESSION', 'Sin comprimir (Raw SQL)');
 define('TEXT_INFO_DOWNLOAD_ONLY', 'Solo descargar (no guardar en el servidor)');
 define('TEXT_INFO_BEST_THROUGH_HTTPS', 'Usar conexi&oacute;n segura HTTPS!');
+define('TEXT_DELETE_INTRO', '&iquest;Est&aacute;s seguro de que quieres eliminar esta copia de seguridad?');
 define('TEXT_NO_EXTENSION', 'Ninguna');
 define('TEXT_BACKUP_DIRECTORY', 'Directorio de las copias de seguridad:');
 define('TEXT_LAST_RESTORATION', '&Uacute;ltima restauraci&oacute;n:');
@@ -68,4 +69,11 @@ define('TEXT_REMOVE_COLLATE', "<b> Sin codificaci&oacute;n de caracteres 'COLLAT
 //TEXT_REMOVE_ENGINE
 define('TEXT_REMOVE_ENGINE', "<b>sin motores de almacenamiento 'ENGINE'</b><br> - Las declaraciones del motor de almacenamiento (MyISAM,InnoDB) no est&aacute;n siendo insertadas.");
 
+define('TEXT_IMPORT_UTF8_NOTICE', '<b>Atenci&oacute;n:</b> la base de datos se convierte a UTF-8.');
+define('TEXT_INFO_CHARSET', 'Juego de caracteres:');
+
+define('TEXT_TABLES_BACKUP_TYPE', '<b>Copia de seguridad</b><br> - &iquest;Qu&eacute; tablas deben guardarse?');
+define('TEXT_BACKUP_ALL', 'Todas las mesas');
+define('TEXT_BACKUP_CUSTOM', 'Tablas seleccionadas');
+define('TEXT_TABLES_TO_BACKUP', '<b>Las siguientes tablas deben ser guardadas:</b>');
 ?>

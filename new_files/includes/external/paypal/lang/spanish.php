@@ -65,10 +65,59 @@ $lang_array = array(
   'TEXT_PAYPAL_CAPTURE_SUBMIT' => 'Captura',
   'TEXT_PAYPAL_CAPTURED' => 'Pago capturado',
   
+  // products
+  'TEXT_PAYPAL_PRODUCTS_TYPE' => 'Tipo de productos',
+  'TEXT_PAYPAL_CREATE_PRODUCT' => 'Crear producto',
+  
+  
+  // subscriptions
+  'TEXT_PAYPAL_SUBSCRIPTIONS_HEADING' => 'Suscripciones de PayPal',
+  'TEXT_PAYPAL_PLANS' => 'Plan',
+  'TEXT_PAYPAL_NEW_PLAN' => 'Nuevo plan',
+  'TEXT_PAYPAL_PLAN_SAVE' => 'Crear un plan',
+  'TEXT_PAYPAL_PLAN_PATCH' => 'Plan de ahorro',
+  'TEXT_PAYPAL_PLAN_STATUS' => 'Estado',
+  'TEXT_PAYPAL_PLAN_NAME' => 'Descripci&oacute;n',
+  'TEXT_PAYPAL_PLAN_DAY_NAME_INFO' => 'El nombre se muestra al cliente y no se puede cambiar.',
+  'TEXT_PAYPAL_PLAN_INTERVAL' => 'Pago',
+  'TEXT_PAYPAL_PLAN_CYCLE' => 'Duraci&oacute;n',
+  'TEXT_PAYPAL_PLAN_CYCLE_NO_LIMIT' => 'hasta nuevo aviso',
+  'TEXT_PAYPAL_PLAN_FIXED_PRICE' => 'Precio',
+  'TEXT_PAYPAL_PLAN_SETUP_FEE' => 'Cuota de instalaci&oacute;n',
+  'TEXT_PAYPAL_PLAN_TAX_CLASS' => 'Clase de impuesto',
+  'TEXT_PAYPAL_PLAN_TAX_INCLUDE' => 'Impuesto incluido',
+  
+  'TEXT_PAYPAL_PLAN_DAY' => 'Diario',
+  'TEXT_PAYPAL_PLAN_WEEK' => 'Semanal',
+  'TEXT_PAYPAL_PLAN_MONTH' => 'Mensualmente',
+  'TEXT_PAYPAL_PLAN_YEAR' => 'Anualmente',
+  
+  'TEXT_PAYPAL_NO_CHANGE' => 'no se puede cambiar',
+  'TEXT_ACTIVE' => 'activado',
+  'TEXT_INACTIVE' => 'desactivado',
+
+  'TEXT_NONE' => '--ninguno--',
+  'TEXT_YES' => 's&iacute;',
+  'TEXT_NO' => 'no',
+  
+  'TEXT_PAYPAL_BILLING' => 'Pagos',
+  'TEXT_PAYPAL_BILLING_OUTSTANDING' => 'saldo pendiente:',
+  'TEXT_PAYPAL_BILLING_CYCLES_COMPLETED' => 'Pagos realizados:',
+  'TEXT_PAYPAL_BILLING_CYCLES_REMAINING' => 'Pagos restantes:',
+  'TEXT_PAYPAL_BILLING_CYCLES_TOTAL' => 'Total de pagos:',
+  'TEXT_PAYPAL_BILLING_TIME_NEXT' => 'pr&oacute;ximo pago:',
+  'TEXT_PAYPAL_BILLING_TIME_FINAL' => 'pago final:',
+  'TEXT_PAYPAL_BILLING_FAILED' => 'fall&oacute;:',
+  'TEXT_PAYPAL_CANCEL' => 'cancelar el pago',
+  'TEXT_PAYPAL_CANCEL_SUBMIT' => 'Confirmar',
   
   // error
   'TEXT_PAYPAL_ERROR_AMOUNT' => 'Por favor, introduzca una cantidad v&aacute;lida',
   'TEXT_PAYPAL_ERROR_ALREADY_PAID' => 'Ya hemos recibido su pago. &iexcl;Muchas gracias!',
+  'TEXT_PAYPAL_ERROR_NO_PLAN' => 'Please choose a plan.',
+  'TEXT_PAYPAL_ERROR_MAX_PRODUCTS' => 'This product can only be purchased on its own.',
+  'TEXT_PAYPAL_ERROR_CANCEL' => 'An error occurred while canceling.',
+  'TEXT_PAYPAL_ERROR_SUBSCRIPTION_PRODUCTS' => 'You have a subscription product in your shopping cart which can only be bought alone.',  
   
   
   // diverse

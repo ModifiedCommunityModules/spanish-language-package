@@ -26,6 +26,7 @@ define('TABLE_HEADING_EXPIRES_DATE', 'V&aacute;lido hasta');
 define('TABLE_HEADING_PRODUCTS_PRICE', 'Precio del art&iacute;culo');
 define('TABLE_HEADING_STATUS', 'Estado');
 define('TABLE_HEADING_ACTION', 'Acci&oacute;n');
+define('TABLE_HEADING_EDIT','Editar');
 
 define('TEXT_SPECIALS_PRODUCT', 'Art&iacute;culo:');
 define('TEXT_SPECIALS_SPECIAL_PRICE', 'Precio de oferta:');
@@ -41,6 +42,10 @@ define('TEXT_INFO_PERCENTAGE', 'Porcentaje:');
 define('TEXT_INFO_START_DATE', 'V&aacute;lido desde:');
 define('TEXT_INFO_EXPIRES_DATE', 'V&aacute;lido hasta:');
 define('TEXT_INFO_STATUS_CHANGE', 'Desactivado en:');
+
+define('TEXT_ACTIVE_ELEMENT','Elemento activo');
+define('TEXT_MARKED_ELEMENTS','Elementos marcados');
+define('TEXT_INFO_HEADING_DELETE_ELEMENTS', 'Eliminar elementos');
 
 define('TEXT_INFO_HEADING_DELETE_SPECIALS', 'Oferta especial loschen');
 define('TEXT_INFO_DELETE_INTRO', '&oacute;Est&aacute;s seguro de que quieres descargar esta oferta especial?');

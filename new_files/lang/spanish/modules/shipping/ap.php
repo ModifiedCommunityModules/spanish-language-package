@@ -31,12 +31,18 @@ define('MODULE_SHIPPING_AP_UNDEFINED_RATE', 'Los gastos de env&iacute;o no puede
 
 define('MODULE_SHIPPING_AP_STATUS_TITLE' , 'Austriaco Post AG');
 define('MODULE_SHIPPING_AP_STATUS_DESC' , '&iquest;Quieres ofrecer el env&iacute;o de Austrian Post AG?');
+define('MODULE_SHIPPING_AP_ALLOWED_TITLE' , 'Zonas permitidas');
+define('MODULE_SHIPPING_AP_ALLOWED_DESC' , 'Por favor, introduzca las zonas <b>por separado</b> a las que se debe permitir el uso de este m&oacute;dulo (por ejemplo, AT,DE (d&eacute;jelo vac&iacute;o si quiere permitir todas las zonas))');
 define('MODULE_SHIPPING_AP_TAX_CLASS_TITLE' , 'Clase de impuestos');
 define('MODULE_SHIPPING_AP_TAX_CLASS_DESC' , 'Utilice la siguiente clase de impuestos en la tarifa de env&iacute;o.');
 define('MODULE_SHIPPING_AP_ZONE_TITLE' , 'Zona de env&iacute;o');
 define('MODULE_SHIPPING_AP_ZONE_DESC' , 'Si se selecciona una zona, s&oacute;lo se debe habilitar este m&eacute;todo de env&iacute;o para esa zona.');
 define('MODULE_SHIPPING_AP_SORT_ORDER_TITLE' , 'Orden de clasificaci&oacute;n');
 define('MODULE_SHIPPING_AP_SORT_ORDER_DESC' , 'Ordenar el orden de exhibici&oacute;n.');
+define('MODULE_SHIPPING_AP_NUMBER_ZONES_TITLE' , 'N&uacute;mero de zonas');
+define('MODULE_SHIPPING_AP_NUMBER_ZONES_DESC' , 'N&uacute;mero de zonas a utilizar');
+define('MODULE_SHIPPING_AP_DISPLAY_TITLE' , 'Activar pantalla');
+define('MODULE_SHIPPING_AP_DISPLAY_DESC' , '&iquest;Quiere mostrar si el env&iacute;o al destino no es posible o si no se pueden calcular los gastos de env&iacute;o?');
 define('MODULE_SHIPPING_AP_ALLOWED_TITLE' , 'Zonas permitidas');
 define('MODULE_SHIPPING_AP_ALLOWED_DESC' , 'Por favor, introduzca las zonas <b>por separado</b> que deben ser permitidas para utilizar este m&oacute;dulo (por ejemplo, AT, DE (deje vac&iacute;o si quiere permitir todas las zonas))');
 define('MODULE_SHIPPING_AP_NUMBER_ZONES_TITLE' , 'N&uuml;mero de zonas');
