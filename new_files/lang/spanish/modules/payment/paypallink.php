@@ -25,11 +25,11 @@ $lang_array = array(
   'MODULE_PAYMENT_PAYPALLINK_ZONE_DESC' => 'Si se elige una zona, el m&eacute;todo de pago ser&aacute; v&aacute;lido s&oacute;lo para esta zona.',
   'MODULE_PAYMENT_PAYPALLINK_LP' => '<br /><br /><a target="_blank" href="http://www.paypal.com/de/webapps/mpp/referral/paypal-business-account2?partner_id=EHALBVD4M2RQS"><strong>Cree una cuenta PayPal ahora.</strong></a>',
 
-  'MODULE_PAYMENT_PAYPALLINK_TEXT_EXTENDED_DESCRIPTION' => '<strong><font color="red">ATENCI&Oacute;N:</font></strong> Por favor, configure PayPal en "M&oacute;dulos de socios" -> "PayPal" -> <a href="'.xtc_href_link('paypal_config.php').'"><strong>"PayPal Configuration"</strong></a>!',
+  'MODULE_PAYMENT_PAYPALLINK_TEXT_EXTENDED_DESCRIPTION' => '<strong><font color="red">ATENCI&Oacute;N:</font></strong> Por favor, configure PayPal en "M&oacute;dulos de socios" -> "PayPal" -> <a href="'.xtc_href_link('paypal_config.php').'"><strong>"Configuración de PayPal"</strong></a>!',
 
   'MODULE_PAYMENT_PAYPALLINK_TEXT_ERROR_HEADING' => 'Nota',
   'MODULE_PAYMENT_PAYPALLINK_TEXT_ERROR_MESSAGE' => 'El pago de PayPal ha sido cancelado',
-  
+
   'MODULE_PAYMENT_PAYPALLINK_TEXT_SUCCESS' => 'Pague ahora con PayPal. Por favor, haga clic en el siguiente enlace:<br/> %s',
   'MODULE_PAYMENT_PAYPALLINK_TEXT_COMPLETED' => 'Gracias por pagar con PayPal.',
 );

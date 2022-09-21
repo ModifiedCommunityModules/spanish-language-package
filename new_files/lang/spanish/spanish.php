@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   $Id: spanish.php 10597 27-01-2017 13:28:06Z Carloslakes $
+   $Id: spanish.php 14598 2022-06-28 13:05:00Z GTB $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -12,23 +12,25 @@
    (c) 2002-2003 osCommerce(spanish.php,v 1.119 2003/05/19); www.oscommerce.com
    (c) 2003 nextcommerce (spanish.php,v 1.25 2003/08/25); www.nextcommerce.org
    (c) 2006 XT-Commerce
-   
-   Released under the GNU General Public License 
+
+   Released under the GNU General Public License
    ---------------------------------------------------------------------------------------*/
 
 /*
- * 
+ *
  *  DATE / TIME
- * 
+ *
  */
- 
-define('HTML_PARAMS','dir="ltr" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml"');
-@setlocale(LC_TIME, 'es_ES.UTF-8' ,'es_ES@euro', 'es_ES', 'es-ES', 'es', 'esp', 'es_ES.ISO_8859-1', 'Spain','es_ES.ISO_8859-15');
 
-define('DATE_FORMAT_SHORT', '%d.%m.%Y');  // this is used for strftime()
-define('DATE_FORMAT_LONG', '%A, %d. %B %Y'); // this is used for strftime()
-define('DATE_FORMAT', 'd.m.Y');  // this is used for strftime()
-define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
+define('HTML_PARAMS','dir="ltr" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml"');
+@setlocale(LC_TIME, 'es_ES.UTF-8', 'es_ES', 'es-ES', 'es', 'Spanish');
+
+define('DATE_LOCALE', 'es_ES');
+define('DATE_FORMAT_SHORT', 'd.m.Y');
+define('DATE_FORMAT_LONG', 'l, d. F Y');
+define('DATE_FORMAT', DATE_FORMAT_SHORT);
+define('PHP_DATE_TIME_FORMAT',  DATE_FORMAT_SHORT . ' H:i:s');
+define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
 define('DOB_FORMAT_STRING', 'tt.mm.jjjj');
 
 function xtc_date_raw($date, $reverse = false) {
@@ -46,17 +48,18 @@ define('TITLE', STORE_NAME);
 define('HEADER_TITLE_TOP', 'INICIO');
 define('HEADER_TITLE_CATALOG', 'Tienda');
 
-// if USE_DEFAULT_LANGUAGE_CURRENCY is true, use the following currency when changing language, 
+// if USE_DEFAULT_LANGUAGE_CURRENCY is true, use the following currency when changing language,
 // instead of staying with the applications default currency
 define('LANGUAGE_CURRENCY', 'EUR');
 
 define('MALE', 'Se&ntilde;or');
 define('FEMALE', 'Se&ntilde;ora');
 define('DIVERSE', 'Diverso');
+
 /*
- * 
+ *
  *  BOXES
- * 
+ *
  */
 
 // text for gift voucher redeeming
@@ -73,7 +76,7 @@ define('BOX_MANUFACTURER_INFO_HOMEPAGE', '%s Homepage');
 define('BOX_MANUFACTURER_INFO_OTHER_PRODUCTS', 'M&aacute;s art&iacute;culos');
 
 define('BOX_HEADING_ADD_PRODUCT_ID','A&ntilde;adir a la cesta');
-  
+
 define('BOX_LOGINBOX_STATUS','Grupo de clientes: ');
 define('BOX_LOGINBOX_DISCOUNT','Descuento art&iacute;culo');
 define('BOX_LOGINBOX_DISCOUNT_TEXT','Descuento');
@@ -102,9 +105,9 @@ define('JS_ERROR_PRIVACY_NOTICE_NOT_ACCEPTED', '* Desafortunadamente no podemos 
 define('JS_REVIEW_AUTHOR', '* Por favor pon Tu nombre.\n\n');
 
 /*
- * 
+ *
  * ACCOUNT FORMS
- * 
+ *
  */
 
 define('ENTRY_COMPANY_ERROR', '');
@@ -143,6 +146,7 @@ define('ENTRY_PASSWORD_ERROR_MIN_LOWER', 'La contrase&ntilde;a debe contener al 
 define('ENTRY_PASSWORD_ERROR_MIN_UPPER', 'La clavo debe contener al menos %s letra may&uacute;scula.');
 define('ENTRY_PASSWORD_ERROR_MIN_NUM', 'La contrase&ntilde;a debe contener al menos %s n&uacute;mero.');
 define('ENTRY_PASSWORD_ERROR_MIN_CHAR', 'La contrase&ntilde;a debe contener al menos %s caracter especial.');
+define('ENTRY_PASSWORD_ERROR_INVALID_CHAR', 'Su contraseña contiene caracteres no válidos. Por favor, utilice una contraseña diferente.');
 define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Las contrase&ntilde;as introducidas no coinciden.');
 define('ENTRY_PASSWORD_TEXT', '*');
 define('ENTRY_PASSWORD_CONFIRMATION_TEXT', '*');
@@ -153,11 +157,11 @@ define('ENTRY_PASSWORD_NEW_ERROR', 'La contrase&ntilde;a nueva debe contener al 
 define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Las contrase&ntilde;as introducidas no coinciden.');
 
 /*
- * 
+ *
  *  RESULT PAGES
- * 
+ *
  */
- 
+
 define('TEXT_RESULT_PAGE', 'P&aacute;ginas:');
 define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Se muestran <strong>%d</strong> a <strong>%d</strong> (de un total de <strong>%d</strong> art&iacute;culos)');
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Se muestran <strong>%d</strong> a <strong>%d</strong> (de un total de <strong>%d</strong> pedidos)');
@@ -166,9 +170,9 @@ define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Se muestran <strong>%d</strong> a
 define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Se muestran <strong>%d</strong> a <strong>%d</strong> (de un total de <strong>%d</strong> Ofertas)');
 
 /*
- * 
+ *
  * SITE NAVIGATION
- * 
+ *
  */
 
 define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'p&aacute;gina anterior');
@@ -178,18 +182,18 @@ define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', '%d P&aacute;ginas anteriores');
 define('PREVNEXT_TITLE_NEXT_SET_OF_NO_PAGE', '%d P&aacute;ginas posteriores');
 
 /*
- * 
+ *
  * PRODUCT NAVIGATION
- * 
+ *
  */
 
 define('PREVNEXT_BUTTON_PREV', '&laquo;');
 define('PREVNEXT_BUTTON_NEXT', '&raquo;');
 
 /*
- * 
+ *
  * IMAGE BUTTONS
- * 
+ *
  */
 
 define('IMAGE_BUTTON_ADD_ADDRESS', 'Nueva direcci&oacute;n');
@@ -205,7 +209,7 @@ define('IMAGE_BUTTON_SEARCH', 'Buscar');
 define('IMAGE_BUTTON_UPDATE', 'Actualizar');
 define('IMAGE_BUTTON_UPDATE_CART', 'Actualizar cesta de compra');
 define('IMAGE_BUTTON_WRITE_REVIEW', 'Tu opini&oacute;n');
-define('IMAGE_BUTTON_ADMIN', 'Administrador'); 
+define('IMAGE_BUTTON_ADMIN', 'Administrador');
 define('IMAGE_BUTTON_PRODUCT_EDIT', 'Editar producto');
 define('IMAGE_BUTTON_SEND', 'Enviar');
 define('IMAGE_BUTTON_CONTINUE_SHOPPING', 'Seguir comprando');
@@ -226,12 +230,10 @@ define('TEXT_PRINT', 'Imprimir');
 
 define('BUTTON_RESET', 'Reiniciar');
 define('BUTTON_UPDATE', 'Actualizaci&oacute;n');
-
-
 /*
- * 
+ *
  *  GREETINGS
- * 
+ *
  */
 
 define('TEXT_GREETING_PERSONAL', 'Bienvenido de nuevo <span class="greetUser">%s!</span>    Para ver nuestros art&iacute;culos nuevos <a href="%s">pulsa aqu&iacute;</a>');
@@ -253,9 +255,9 @@ define('TEXT_NO_NEW_PRODUCTS', 'No hay art&iacute;culos nuevos desde los &uacute
 define('TEXT_UNKNOWN_TAX_RATE', 'Tasa de impuesto desconocida');
 
 /*
- * 
+ *
  * WARNINGS
- * 
+ *
  */
 
 define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Advertencia: El directorio de instalaci&oacute;n sigue existiendo en: %s. Por razones de seguridad, borra por favor este directorio!');
@@ -285,9 +287,6 @@ define('ERROR_PRIVACY_NOTICE_NOT_ACCEPTED', 'Por favor, confirme que ha le&iacut
 
 define('SUB_TITLE_OT_DISCOUNT','Descuento:');
 
-define('TAX_ADD_TAX','incl. ');
-define('TAX_NO_TAX','m&aacute;s ');
-
 define('NOT_ALLOWED_TO_SEE_PRICES','Debe estar registrado para poder ver los precios.');
 define('NOT_ALLOWED_TO_SEE_PRICES_TEXT','Hay que registrarse para poder ver los precios.');
 
@@ -300,9 +299,9 @@ define('TEXT_GUEST',' Visita');
 define('TEXT_SEARCH_ENGINE_AGENT','M&aacute;quina de b&uacute;squeda');
 
 /*
- * 
+ *
  * ADVANCED SEARCH
- * 
+ *
  */
 
 define('TEXT_AC_ALL_CATEGORIES', 'Todos');
@@ -340,9 +339,9 @@ define('ERROR_INVALID_PRODUCT', 'No hemos encontrado el art&iacute;culo seleccio
 define('JS_KEYWORDS_MIN_LENGTH', 'El t&eacute;rmino de b&uacute;squeda debe tener al menos ' . (int)SEARCH_MIN_LENGTH . ' caracteres de longitud.\n');
 
 /*
- * 
+ *
  * NAVBAR TITLE
- * 
+ *
  */
 
 define('NAVBAR_TITLE_ACCOUNT', 'Tu cuenta personal');
@@ -396,9 +395,9 @@ define('NAVBAR_GV_SEND', 'Enviar vale');
 define('NAVBAR_TITLE_DOWNLOAD', 'Descargas');
 
 /*
- * 
+ *
  *  MISC
- * 
+ *
  */
 
 define('TEXT_NEWSLETTER','&iquest;Quieres estar siempre al corriente?<br />Sin problema, darte de alta en nuestro Bolet&iacute;n de noticias y estar&aacute;s informado de todas las novedades en nuestra tienda on-line.');
@@ -451,11 +450,11 @@ define('PERSONAL_MESSAGE', '%s escribe:');
 define('TEXT_LINK_TITLE_INFORMATION', 'Informaci&oacute;n');
 
 /*
- * 
+ *
  *  COUPON POPUP
- * 
+ *
  */
- 
+
 define('TEXT_CLOSE_WINDOW', 'Cerrar ventana [x]');
 define('TEXT_COUPON_HELP_HEADER', 'Tu Vale/Cup&oacute;n ha sido canjeado correctamente.');
 define('TEXT_COUPON_HELP_NAME', '<br /><br />Descripci&oacute;n del Vale/Cup&oacute;n: %s');
@@ -476,13 +475,13 @@ define('TEXT_COUPON_CATEGORIES_RESTRICT', 'Su vale/cup&oacute;n est&aacute; limi
 // VAT Reg No
 define('ENTRY_VAT_TEXT', 'S&oacute;lo para Espa&ntilde;a y UE!');
 define('ENTRY_VAT_ERROR', 'El n&uacute;mero fiscal introducido no es v&aacute;lido o no se puede verificar en estos momentos! Por favor introduce un n&uacute;mero v&aacute;lido o deja el campo vac&iacute;o.');
-define('MSRP','PVP');
+define('PVP','PVP');
 define('YOUR_PRICE','Tu precio ');
 define('UNIT_PRICE','Precio por unidad ');
-define('ONLY',' Ahora solo ');// DokuMan - Werbung mit durchgestrichenen Statt-Preisen ist zulässig
+define('ONLY',' Ahora solo ');
 define('FROM','desde ');
 define('YOU_SAVE','Te ahorras ');
-define('INSTEAD','Nuestro precio anterior ');// DokuMan - Werbung mit durchgestrichenen Statt-Preisen ist zulässig
+define('INSTEAD','Nuestro precio anterior ');
 define('TXT_PER',' por ');
 define('TAX_INFO_INCL','incl. %s I.V.A');
 define('TAX_INFO_EXCL','excl. %s I.V.A');
@@ -502,35 +501,22 @@ define('_MODULE_UNDEFINED_SHIPPING_RATE', 'Los gastos de env&iacute;o no se pued
 
 define('NAVBAR_TITLE_1_ACCOUNT_DELETE', 'Tu cuenta');
 define('NAVBAR_TITLE_2_ACCOUNT_DELETE', 'Borrar cuenta');
-	
+
 //contact-form error messages
 define('ERROR_EMAIL','<p><b>Tu direcci&oacute;n de correo electr&oacute;nico:</b> Entrada no v&aacute;lida!</p>');
 define('ERROR_VVCODE','<p><b>C&oacute;digo de seguridad:</b> No coinciden, por favor introduzca de nuevo el c&oacute;digo de seguridad!</p>');
-define('ERROR_MSG_BODY','<p><b>Tu mensaje:</b> S&iacute;n entrada!</p>');	
+define('ERROR_MSG_BODY','<p><b>Tu mensaje:</b> S&iacute;n entrada!</p>');
 
 //Table Header checkout_confirmation.php
 define('HEADER_QTY', 'Cantidad');
-define('HEADER_ARTICLE', 'Art&iacute;culo');    
+define('HEADER_ARTICLE', 'Art&iacute;culo');
 define('HEADER_SINGLE', 'Precio unidad');
 define('HEADER_TOTAL','Suma');
 define('HEADER_MODEL', 'N&ordm; art&iacute;culo.');
 
 ### PayPal API Modul
-define('NAVBAR_TITLE_PAYPAL_CHECKOUT','PayPal-Checkout');
-define('PAYPAL_ERROR','Cancelar PayPal');
-define('PAYPAL_NOT_AVIABLE','PayPal Express por el momento no esta disponible.<br />Por favor selecciona otra forma de pago<br />o int&eacute;ntelo m&aacute;s tarde otra vez.<br />Pedimos disculpas.<br />');
 define('ERROR_ADDRESS_NOT_ACCEPTED', 'Por favor, confirme su direcci&oacute;n para que podamos procesar su pedido.');
-define('PAYPAL_FEHLER','PayPal avisa de un problema en la transacci&oacute;n.<br />Su pedido esta registrado, pero no se puede llegar a cabo.<br />Por favor haga un nuevo pedido.<br />Pedimos disculpas.<br />');
-define('PAYPAL_WARTEN','PayPal avisa de un problema en la transacci&oacute;n.<br />Tiene que ir de nuevo a PayPal, pagar pagar el pedido.<br />M&aacute;s abajo puede ver el pedido guardado.<br />Pedimos disculpas.<br />Por favor pulsa de nuevo el bot&oacute;n PayPal Express.<br />');
-define('PAYPAL_NEUBUTTON','Por favor, pulsa otra vez para pagar el pedido.<br />Cualquier otra tecla interrumpe la transacci&oacute;n del pedido.');
-define('ERROR_ADDRESS_NOT_ACCEPTED', '* Hasta que no aceptes la direcci&oacute;n de env&iacute;o y la direcci&oacute;n de env&iacute;o de factura,\n no podemos llevar a cabo el procedimiento de env&iacute;o del pedido!\n\n');
-define('PAYPAL_GS','Cup&oacute;n/Vale');
-define('PAYPAL_TAX','I.V.AMwSt.');
-define('PAYPAL_EXP_WARN','Atenci&oacute;n! Gastos posibles de transportes, ser&aacute;n calculados cuando se haga el procedimiento de pago.');
 define('PAYPAL_EXP_VORL','Gastos de env&iacute;o provisionales');
-define('PAYPAL_EXP_VERS','6.90');
-define('PAYPAL_ADRESSE','El pa&iacute;s que pone en la direcci&oacute;n de env&iacute;o en PayPal, no lo tenemos en nuestro sistema.<br />Por favor, ponte en contacto con nosotros.<br />Pedimos disculpas.<br />Pa&iacute;s para env&iacute;o en PayPal: ');
-define('PAYPAL_AMMOUNT_NULL','La suma total (sin gastos de env&iacute;o) es igual a 0.<br />No se puede usar PayPal Express para este pago.<br />Por favor, elige otra forma de pago.<br />Pedimos disculpas.<br />');
 ### PayPal API Modul
 
 define('BASICPRICE_VPE_TEXT','comprando esta cantidad solo ');
@@ -551,6 +537,7 @@ define('TEXT_SAVED_BASKET', 'Por favor revisa Tu cesta de compra. Aun contiene a
 define('ERROR_REVIEW_TEXT', 'El texto para escribir una opini&oacute;n debe contener min. ' . REVIEW_TEXT_MIN_LENGTH . ' caracteres.');
 define('ERROR_REVIEW_RATING', 'Por favor a&ntilde;ade Tu valoraci&oacute;n.');
 define('ERROR_REVIEW_AUTHOR', 'Por favor introduce Tu nombre.');
+define('ERROR_REVIEW_PRODUCT_PURCHASED', 'Sólo se pueden revisar los productos que también se han comprado a nosotros.');
 
 define('GV_NO_PAYMENT_INFO', '<div class="infomessage">Con el Saldo actual puedes pagar el pedido completo. Si no quieres pagar con el saldo de Tu cuenta, desactiva la casilla de Saldo y elige una forma de pago!</div>');
 define('GV_ADD_PAYMENT_INFO', '<div class="errormessage">Tu Saldo actual no es suficiente para pagar todo el pedido. Por favor a&ntilde;ade adem&aacute;s und forma de pago!</div>');
@@ -628,7 +615,7 @@ define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_9', 'Debes introducir el n&ordm; de cu
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_10', 'Falta el titular de la cuenta.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_128', 'Error interno al comprobar los datos bancarios.');
 
-// Fehlermeldungen alle IBAN-Nummern 
+// Fehlermeldungen alle IBAN-Nummern
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1000', 'La identificaci&oacute;n del Pa&iacute;s en el n&uacute;mero de IBAN no es correcto.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1010', 'IBAN-Tama&ntilde;o incorrecto. Demasiado largo.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1020', 'IBAN-Tama&ntilde;o incorrecto. Faltan n&uacute;meros.');
@@ -640,7 +627,7 @@ define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1070', 'Tama&ntilde;o del BIC err&oacu
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1080', 'Tama&ntilde;o del BIC no v&aacute;lido: Son necesarios 8 o 11 caracteres.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1200', 'Desgraciadamente no podemos aceptar n&uacute;meros IBAN de este Pa&iacute;s.');
 
-// Fehlermeldungen fŸr deutsche Kontonummern 
+// Fehlermeldungen fŸr deutsche Kontonummern
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2001', 'Los n&uacute;meros (posiciones 13 al 22) y/o los del c&oacute;digo bancario (posiciones 5 al 12) no son v&aacute;lidos o no coinciden .');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2002', 'Los n&uacute;meros (posiciones 13 al 22) no se pueden comprobar autom&aacute;ticamente.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2003', 'Para los n&uacute;meros de las posiciones 13 al 22 del IBAN no est&aacute;n definidos procesos de comprobaci&oacute;n.');
@@ -665,4 +652,6 @@ define('SITEMAP_ERROR_401', 'Error 401: No autorizado.');
 define('SITEMAP_ERROR_403', 'Error 403: Prohibido.');
 define('SITEMAP_ERROR_404', 'Error 404: No se encuentra!');
 define('SITEMAP_ERROR_500', 'Error 500: Error interno del servidor.');
+
+define('ERROR_PRODUCTS_MISSING_CONFIGURATION_NOT_ADDED', 'Algunos artículos de su pedido ya no están disponibles en la configuración deseada y no se han colocado en la cesta de la compra.');
 ?>

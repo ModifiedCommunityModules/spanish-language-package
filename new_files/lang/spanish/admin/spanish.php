@@ -1,6 +1,6 @@
 <?php
 /* --------------------------------------------------------------
-   $Id: spanish.php 3569 2012-08-30 15:39:18Z web28 $
+   $Id: spanish.php 14517 2022-06-11 08:49:23Z GTB $
 
    modified eCommerce Shopsoftware
    http://www.modified-shop.org
@@ -18,20 +18,22 @@
    Third Party contributions:
    Customers Status v3.x (c) 2002-2003 Copyright Elari elari@free.fr | www.unlockgsm.com/dload-osc/ | CVS : http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/elari/?sortby=date#dirlist
 
-   Released under the GNU General Public License 
+   Released under the GNU General Public License
    --------------------------------------------------------------*/
 
 // look in your $PATH_LOCALE/locale directory for available locales..
-// on RedHat6.0 I used 'de_DE'
-// on FreeBSD 4.0 I use 'de_DE.ISO_8859-1'
+// on RedHat6.0 I used 'es_ES'
+// on FreeBSD 4.0 I use 'es_ES.ISO_8859-1'
 // this may not work under win32 environments..
 
-@setlocale(LC_TIME, 'es_ES.UTF-8' ,'es_ES@euro', 'es_es', 'es-ES', 'es', 'es', 'es_ES.ISO_8859-1', 'Spain','es_ES.ISO_8859-15');
-define('DATE_FORMAT_SHORT', '%d.%m.%Y');  // this is used for strftime()
-define('DATE_FORMAT_LONG', '%A, %d. %B %Y'); // this is used for strftime()
-define('DATE_FORMAT', 'd.m.Y');  // this is used for strftime()
-define('PHP_DATE_TIME_FORMAT', 'd.m.Y H:i:s'); // this is used for date()
-define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' %H:%M:%S');
+@setlocale(LC_TIME, 'es_ES.UTF-8', 'es_ES', 'es-ES', 'es', 'Spanish');
+
+define('DATE_LOCALE', 'es_ES');
+define('DATE_FORMAT_SHORT', 'd.m.Y');
+define('DATE_FORMAT_LONG', 'l, d. F Y');
+define('DATE_FORMAT', DATE_FORMAT_SHORT);
+define('PHP_DATE_TIME_FORMAT',  DATE_FORMAT_SHORT . ' H:i:s');
+define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
 
 // Return date in raw format
 // $date should be in format mm/dd/yyyy
@@ -147,14 +149,12 @@ define('BOX_FILE_MANAGER', 'Gestor de Ficheros');
 define('BOX_MAIL', 'Enviar E-mail');
 define('BOX_NEWSLETTERS', 'Gestor Newsletter');
 define('BOX_SERVER_INFO', 'Informaci&oacute;n del servidor');
-define('BOX_BLZ_UPDATE', 'Actualizar c&oacute;digos de Bancos');
 define('BOX_WHOS_ONLINE', 'Quien esta online');
 define('BOX_TPL_BOXES','Orden de los Box');
 define('BOX_CURRENCIES', 'Divisas');
 define('BOX_LANGUAGES', 'Idiomas');
 define('BOX_ORDERS_STATUS', 'Estados de pedido');
 define('BOX_ATTRIBUTES_MANAGER','Gestor de atributos');
-define('BOX_MODULE_NEWSLETTER','Newsletter');
 define('BOX_SHIPPING_STATUS','Estado de env&iacute;o');
 define('BOX_SALES_REPORT','Estad&iacute;sticas de ventas');
 define('BOX_MODULE_EXPORT','M&oacute;dulos de exportaci&oacute;n');
@@ -172,12 +172,10 @@ define('BOX_ORDERS_XSELL_GROUP','Grupos de Cross-Marketing');
 define('BOX_REMOVEOLDPICS','Borrar im&aacute;genes viejas'); // Remove old pictures - franky_n - 20110105
 define('BOX_JANOLAW','janolaw AGB Hosting'); // Tomcraft - 2011-06-17 - Added janolaw AGB hosting service
 define('BOX_HAENDLERBUND','Federaci&oacute;n de distribuidores AGB Service'); // Tomcraft - 2012-12-08 - Added haendlerbund AGB interface
-define('BOX_SAFETERMS','Safeterms - Servicio AGB'); // Tomcraft - 2013-06-21 - Safeterms AGB interface
 define('BOX_SHOP','Tienda');
 define('BOX_LOGOUT','Desconectar');
 define('BOX_CREDITS','Cr&eacute;ditos');
 define('BOX_UPDATE','Comprobar versi&oacute;n');
-define('BOX_EASYMARKETING','EASYMARKETING AG'); // Tomcraft - 2013-08-29 - Added easymarketing
 define('BOX_GV_CUSTOMERS','Saldo clientes');
 define('BOX_IT_RECHT_KANZLEI', 'IT Despacho derechos');
 define('BOX_PROTECTEDSHOPS', 'Tiendas protegidas - Servicio AGB');
@@ -195,6 +193,11 @@ define('BOX_SUPPORT', 'Apoyo');
 define('BOX_CACHING', 'Cach&eacute;');
 define('BOX_COOKIE_CONSENT', 'Consentimiento de cookies');
 define('BOX_SEMKNOX', 'B&uacute;squeda en el sitio 360 B&uacute;squeda de productos');
+define('BOX_PAGES_CONTENT', 'Sitios de contenido');
+define('BOX_PRODUCTS_CONTENT', 'Productos adjuntos');
+define('BOX_CONTENT_CONTENT', 'Adjuntos de contenido');
+define('BOX_EMAIL_CONTENT', 'Archivos adjuntos al correo electrónico');
+define('BOX_DHL', 'DHL Shipping &amp; Creación de etiquetas');
 
 define('TXT_GROUPS','<b>Grupos</b>:');
 define('TXT_SYSTEM','Sistema');
@@ -203,12 +206,6 @@ define('TXT_PRODUCTS','Art&iacute;culos/Categor&iacute;as');
 define('TXT_STATISTICS','Herramientas para estad&iacute;sticas');
 define('TXT_TOOLS','M&aacute;s programas');
 define('TEXT_ACCOUNTING','Derechos de acceso para:');
-
-/******* SHOPGATE **********/
-if (is_file(DIR_FS_CATALOG.'includes/external/shopgate/base/lang/spanish/admin/spanish.php')) {
-  include_once (DIR_FS_CATALOG.'includes/external/shopgate/base/lang/spanish/admin/spanish.php');
-}
-/******* SHOPGATE **********/
 
 // javascript messages
 define('JS_ERROR', 'Ha ocurrido un error!\nDebes corregir lo siguiente:\n\n');
@@ -372,8 +369,8 @@ define('DELETE_ENTRY','Borrar entrada?');
 define('TEXT_PAYMENT_ERROR','<b>ATENCION:</b> Por favor activa un m&oacute;dulo de forma de pago!');
 define('TEXT_SHIPPING_ERROR','<b>ATENCION:</b> Por favor activa un m&oacute;dulo de forma de env&iacute;o!');
 define('TEXT_PAYPAL_CONFIG','<b>ATENCION:</b> Puedes configurar los pagos con PayPal del "Live Modus" en: <a href="%s"><strong>Socios -> PayPal</strong></a>'); //DokuMan - 2012-05-31 - show warning if PayPal payment module activated, but not configured for live mode yet
-define('TEXT_DUPLICATE_CONFIG_ERROR','<b>ADVERTENCIA:</b> Clave de configuraci&oacute;n duplicada: ');
 define('TEXT_NETTO','Neto: ');
+define('TEXT_DUPLICATE_CONFIG_ERROR','<b>ADVERTENCIA:</b> Clave de configuraci&oacute;n duplicada: ');
 
 define('ENTRY_CID','N&ordm;. de Cliente:');
 define('IP','IP del pedido:');
@@ -421,14 +418,6 @@ define('TEXT_VALID_CATEGORIES_LIST', 'Lista categor&iacute;as');
 define('TEXT_VALID_CATEGORIES_ID', 'ID-Categor&iacute;a');
 define('TEXT_VALID_CATEGORIES_NAME', 'Nobre Categor&iacute;a');
 
-define('SECURITY_CODE_LENGTH_TITLE', 'Tama&ntilde;o del c&oacute;digo del vale');
-define('SECURITY_CODE_LENGTH_DESC', 'Introduce aqu&iacute; el tama&ntilde;o del c&oacute;digo del vale de descuento. (m&aacute;x. 16 caracteres)');
-
-define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_TITLE', 'Valor del vale de descuento de bienvenida');
-define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_DESC', 'Valor del vale de bienvenida: Si no deseas regalar un vale de bienvenida, introduce un 0, a lo contrario pon aqu&iacute; el valor del vale. p.e. 10.00 o 50.00, pero ning&uacute;n car&aacute;cter de divisa');
-define('NEW_SIGNUP_DISCOUNT_COUPON_TITLE', 'C&oacute;digo del cup&oacute;n de descuento de bienvenida');
-define('NEW_SIGNUP_DISCOUNT_COUPON_DESC', 'C&oacute;digo del cup&oacute;n de descuento de bienvenida: Si no deseas regalar un cup&oacute;n de descuento por e-mail, deja este campo vac&iacute;o, a lo contrario introduce el c&oacute;digo del cup&oacute;n.');
-
 define('TXT_ALL','Todos');
 
 // UST ID
@@ -448,8 +437,6 @@ define('TEXT_VAT_CONNECTION_NOT_POSSIBLE','<span class="messageStackError">ERROR
 
 define('ERROR_GIF_MERGE','Falta soporte Gif GDlib, no es posible usar la marca de agua(Merge)');
 define('ERROR_GIF_UPLOAD','Falta soporte Gif GDlib, no es posible el env&iacute;o de Im&aacute;genes GIF');
-
-define('TEXT_REFERER','Referencia: ');
 
 // BOF - Tomcraft - 2009-06-17 Google Sitemap
 define('BOX_GOOGLE_SITEMAP', 'Google Sitemap');
@@ -472,12 +459,8 @@ define('_PAYMENT_MONEYBOOKERS_PROCESSED_STATUS_ID_TITLE','Estado del pedido - Pa
 define('_PAYMENT_MONEYBOOKERS_PROCESSED_STATUS_ID_DESC','Esto aparecer&aacute; cuando Moneybookers confirme el pago.');
 define('_PAYMENT_MONEYBOOKERS_PENDING_STATUS_ID_TITLE','Estado del pedido - Pago en proceso');
 define('_PAYMENT_MONEYBOOKERS_PENDING_STATUS_ID_DESC','Si el cliente no tuviese saldo a su favor, el cobro estar&iacute;a a la espera hasta que el cliente tenga saldo suficiente en su cuenta de Moneybookers.');
-
 define('_PAYMENT_MONEYBOOKERS_CANCELED_STATUS_ID_TITLE','Estado del pedido - Pago anulado');
 define('_PAYMENT_MONEYBOOKERS_CANCELED_STATUS_ID_DESC','Se mostrar&aacute; cuando por ejemplo una tarjeta de cr&eacute;dito sea rechazada');
-define('MB_TEXT_MBDATE', '&uacute;ltima actualizaci&oacute;n:');
-define('MB_TEXT_MBTID', 'TR ID:');
-define('MB_TEXT_MBERRTXT', 'Estado:');
 define('MB_ERROR_NO_MERCHANT','No existe una cuenta en Moneybookers.com con esta direcci&oacute;n E-Mail!');
 define('MB_MERCHANT_OK','La cuenta en Moneybookers.com es correcta. La ID-comercial %s en Moneybookers.com puede recibir y guardar.');
 define('MB_INFO','<img src="../images/icons/moneybookers/MBbanner.jpg" /><br /><br />Ahora puedes aceptar directamente Tarjetas de cr&eacute;dito, Cargos en cuenta, Transferencias, Giropay as&iacute; como cualquier forma de pagos locales importantes, con una simple activaci&oacute;n en la tienda. Con Moneybookers como All-in-One soluci&oacute;n no necesitas contratos individuales para cada forma de pago. Lo &uacute;nico que necesitas es una cuenta en <a href="https://www.moneybookers.com/app/register.pl" target="_blank"><b>Moneybookers Account</b></a>, para aceptar todas la formas de pagos importantes.');
@@ -492,13 +475,6 @@ define('TEXT_ADMIN_START', 'Inicio');
 define('BOX_HEADING_CONFIGURATION2','Config. avanzada');
 // EOF - Tomcraft - 2009-11-02 - New admin top menu
 
-// BOF - Tomcraft - 2009-11-28 - Included xs:booster
-define('BOX_HEADING_XSBOOSTER','xs:booster');
-define('BOX_XSBOOSTER_LISTAUCTIONS','Mostrar subastas');
-define('BOX_XSBOOSTER_ADDAUCTIONS','Crear subasta');
-define('BOX_XSBOOSTER_CONFIG','Configuraci&oacute;n b&aacute;sica');
-// EOF - Tomcraft - 2009-11-28 - Included xs:booster
-
 //BOF - web28 - 2010-04-10 - ADMIN SEARCH BAR
 define('ASB_QUICK_SEARCH_CUSTOMER','Buscar por cliente...');
 define('ASB_QUICK_SEARCH_ORDER','&Oacute;rdenes de b&uacute;squeda...');
@@ -506,12 +482,13 @@ define('ASB_QUICK_SEARCH_ORDER_ID','Buscar por N&ordm;. de pedido...');
 define('ASB_QUICK_SEARCH_ARTICLE','Buscar por art&iacute;culo/categor&iacute;a...');
 define('ASB_QUICK_SEARCH_EMAIL', 'Buscar por direcci&oacute;n E-Mail...');
 define('ASB_QUICK_SEARCH_ARTICLE_ID','Buscar por ID de art&iacute;culo/categor&iacute;a...');
+define('ASB_QUICK_SEARCH_ORDER_OR_INVOICE','Buscar pedidos ID/factura No....');
 //EOF - web28 - 2010-04-10 - ADMIN SEARCH BAR
 
 //BOF - web28 - 2010.05.30 - accounting - set all checkboxes , countries - set all flags
 define('BUTTON_SET','Activar todos');
 define('BUTTON_UNSET','Desactivar todos');
-//EOF - web28 - 2010.05.30 - accounting - set all checkboxes 
+//EOF - web28 - 2010.05.30 - accounting - set all checkboxes
 
 //BOF - DokuMan - 2010-08-12 - added possibility to reset admin statistics
 define('TEXT_ROWS','Linea');
@@ -523,9 +500,9 @@ define('BUTTON_CLOSE_WINDOW' , 'Cerrar ventana');
 //EOF - web28 - 2010-11-13 - added BUTTON_CLOSE_WINDOW
 
 //BOF - hendrik - 2011-05-14 - independent invoice number and date
-define('ENTRY_INVOICE_NUMBER',  'N&ordm;. de factura:'); 
-define('ENTRY_INVOICE_DATE',    'Fecha de factura:'); 
-//EOF - hendrik - 2011-05-14 - independent invoice number and date  
+define('ENTRY_INVOICE_NUMBER',  'N&ordm;. de factura:');
+define('ENTRY_INVOICE_DATE',    'Fecha de factura:');
+//EOF - hendrik - 2011-05-14 - independent invoice number and date
 
 //BOF - web28 - 2010-07-06 - added missing error text
 define('ENTRY_VAT_ERROR', '&nbsp;<span class="errorText">N&ordm;. I.V.A. no v&aacute;lido</span>');
@@ -587,12 +564,20 @@ define('CFG_TXT_ALL', 'Todos');
 define('CFG_TXT_WEIGHT', 'Peso');
 define('CFG_TXT_PRICE', 'Precio');
 define('CFG_TXT_ITEM', 'Unidad');
-
 define('CFG_TXT_WHOS_ONLINE', 'En l&iacute;nea');
 define('CFG_TXT_ORDERS', 'Ordenes');
 define('CFG_TXT_CUSTOMERS', 'Clientes');
 define('CFG_TXT_SALES_REPORT', 'Estad&iacute;sticas');
 define('CFG_TXT_BLOG', 'Blog');
+define('CFG_TXT_P.PRODUCTS_PRICE', 'Precio');
+define('CFG_TXT_PD.PRODUCTS_NAME', 'Nombre del producto');
+define('CFG_TXT_P.PRODUCTS_DATE_ADDED', 'Fecha de publicación');
+define('CFG_TXT_P.PRODUCTS_MODEL', 'Productos Modelo');
+define('CFG_TXT_P.PRODUCTS_ORDERED', 'Productos solicitados');
+define('CFG_TXT_P.PRODUCTS_SORT', 'Orden de clasificación');
+define('CFG_TXT_P.PRODUCTS_WEIGHT', 'Peso');
+define('CFG_TXT_P.PRODUCTS_QUANTITY', 'En stock');
+define('CFG_TXT_S.SPECIALS_DATE_ADDED', 'Fecha de publicación');
 
 define('CSRF_TOKEN_MANIPULATION', 'CSRFToken Manipulaci&oacute;n (Por razones de seguridad no se admite en la zona del administrador, trabajar con diferentes.)');
 define('CSRF_TOKEN_NOT_DEFINED', 'CSRFToken No esta definido(Por razones de seguridad no se admite en la zona del administrador, trabajar con diferentes.)');
@@ -614,7 +599,6 @@ define('TEXT_PAYPAL_TAB_CONFIG', 'Configuraci&oacute;n Paypal');
 define('TEXT_PAYPAL_TAB_PROFILE', 'Profil PayPal');
 define('TEXT_PAYPAL_TAB_WEBHOOK', 'PayPal Webhook');
 define('TEXT_PAYPAL_TAB_MODULE', 'PayPal M&oacute;dulos');
-define('TEXT_PAYPAL_TAB_TRANSACTIONS', 'Transacciones PayPal');
 define('TEXT_PAYPAL_TAB_INFO', 'Informaci&oacute;n de paypal');
 
 define('TEXT_DEFAULT_SORT_ORDER_TITLE', 'Orden');
@@ -641,4 +625,6 @@ define('ONLY',' Ahora s&oacute;lo ');
 define('FROM','de ');
 define('YOU_SAVE','usted salva ');
 define('INSTEAD','Nuestro precio anterior ');
+define('TXT_PER',' por ');
+define('TEXT_NO_PAYMENT', 'No hay forma de pago');
 ?>

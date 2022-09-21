@@ -1,5 +1,5 @@
 <?php
-define('MODULE_FS_SPANISH_LANGUAGE_PACKAGE_TITLE', '<img src="../lang/spanish/admin/images/icon.gif" alt="Española" title="Española" style="border:0;"> Paquete de idioma espa&#xF1;ol © by <a href="https://www.shopbetreuung.com/" target="_blank" style="color: #007bff; font-size: inherit; font-weight: inherit;">FishnetServices</a>');
+define('MODULE_FS_SPANISH_LANGUAGE_PACKAGE_TITLE', '<img src="../lang/spanish/admin/images/icon.gif" alt="Española" title="Española" style="border:0;"> Paquete de idioma espa&#xF1;ol © by <a href="https://www.shopbetreuung.com/" target="_blank" style="color: #007bff; font-size: inherit; font-weight: inherit;">FishnetServices</a>, <a href="https://github.com/grandeljay/">Jay Trees</a>');
 define('TEXT_LANGUAGE_STATUS', 'Estado del paquete de idiomas: %s');
 define('TEXT_LANGUAGE_STATUS_ADMIN', 'El estado del paquete de idiomas admin: %s');
 define('TEXT_LANGUAGE_CONFIGURATION', 'Puede cambiar la configuraci&#xF3;n del idioma <a href="languages.php"><strong>aqu&#xED;</strong></a> .');

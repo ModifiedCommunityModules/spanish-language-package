@@ -12,7 +12,7 @@
 
 
 $lang_array = array(
-  'MODULE_PAYMENT_PAYPALCART_TEXT_TITLE' => 'PayPal Express',
+  'MODULE_PAYMENT_PAYPALCART_TEXT_TITLE' => 'PayPal exprés',
   'MODULE_PAYMENT_PAYPALCART_TEXT_INFO' => '<img src="https://www.paypal.com/de_DE/DE/i/logo/lockbox_150x47.gif" />',
   'MODULE_PAYMENT_PAYPALCART_TEXT_DESCRIPTION' => 'Pago expr&eacute;s de PayPal: el bot&oacute;n de PayPal en el carro de la compra y en la p&aacute;gina del art&iacute;culo para una conversi&oacute;n m&aacute;xima.<br/>Puede encontrar m&aacute;s informaci&oacute;n sobre el acceso directo a PayPal Express <a target="_blank" href="https://www.paypal.com/de/webapps/mpp/express-checkout">aqu&iacute;</a>.',
   'MODULE_PAYMENT_PAYPALCART_ALLOWED_TITLE' => 'Zonas permitidas',

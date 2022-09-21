@@ -15,6 +15,7 @@ We recommend installing the module via the [MMLC](https://module-loader.de).
 - Ofendo
 - Juan Carlos Silverio Gomez
 - tomcraft
+- [Jay Trees](https://github.com/grandeljay/), update to 2.0.7.2
 
 
 ## Contributing

@@ -1,5 +1,5 @@
 <?php
-define('MODULE_FS_SPANISH_LANGUAGE_PACKAGE_TITLE', '<img src="../lang/spanish/admin/images/icon.gif" alt="Española" title="Española" style="border:0;"> Sprachpaket spanisch © by <a href="https://www.shopbetreuung.com/" target="_blank" style="color: #007bff; font-size: inherit; font-weight: inherit;">FishnetServices</a>');
+define('MODULE_FS_SPANISH_LANGUAGE_PACKAGE_TITLE', '<img src="../lang/spanish/admin/images/icon.gif" alt="Española" title="Española" style="border:0;"> Sprachpaket spanisch © by <a href="https://www.shopbetreuung.com/" target="_blank" style="color: #007bff; font-size: inherit; font-weight: inherit;">FishnetServices</a>, <a href="https://github.com/grandeljay/">Jay Trees</a>');
 define('TEXT_LANGUAGE_STATUS', 'Sprachpaket Status: %s');
 define('TEXT_LANGUAGE_STATUS_ADMIN', 'Sprachpaket Status Admin: %s');
 define('TEXT_LANGUAGE_CONFIGURATION', '<a href="languages.php"><strong>Hier</strong></a> k&ouml;nnen Sie die Sprachkonfiguration bearbeiten.');
